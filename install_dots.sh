@@ -4,8 +4,6 @@ CONF_DIR="/home/grass/.config"
 
 echo -e "WARNING THIS WILL DELETE YOUR CURRENT CONFIGS"
 
-pwd
-
 for i in {1..5}; do 
 	echo -n "."
 	sleep 1
