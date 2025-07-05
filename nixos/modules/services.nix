@@ -14,6 +14,9 @@
 		# Enable the X11 windowing system.
 		xserver.enable = true;
 
+		# Set sddm as the display manager
+		displayManager.sddm.enable = true;
+
 		# Configure keymap in X11
 		xserver.xkb.layout = "us";
 		xserver.xkb.options = "caps:escape";

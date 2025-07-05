@@ -19,6 +19,8 @@
 	};
 
 	environment.systemPackages = with pkgs; [
+		pkgs.kitty
+		pkgs.rustup
 		pkgs.blender
 		pkgs.discord
 		pkgs.neovim

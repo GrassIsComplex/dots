@@ -19,6 +19,10 @@
 	};
 
 	environment.systemPackages = with pkgs; [
+		pkgs.hyprshot
+		pkgs.nix-search-cli
+		pkgs.kitty
+		pkgs.rustup
 		pkgs.blender
 		pkgs.discord
 		pkgs.neovim
