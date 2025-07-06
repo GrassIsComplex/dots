@@ -1,2 +1,2 @@
 *.old
-nixos/hardware_configuration.nix
+nixos/hardware-configuration.nix
