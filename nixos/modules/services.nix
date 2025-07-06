@@ -14,6 +14,12 @@
 		# Enable the X11 windowing system.
 		xserver.enable = true;
 
+		# Mount, trash, and other functionalities
+		gvfs.enable = true;
+		
+		# Thumbnail support for images
+		tumbler.enable = true;
+
 		# Set sddm as the display manager
 		displayManager.sddm.enable = true;
 
