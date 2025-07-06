@@ -1,6 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
+	hardware.graphics.enable32Bit = true;
 	nixpkgs.config.allowUnfree = true;
 
 	programs.steam = {
@@ -17,8 +18,14 @@
 		enable = true;
 		xwayland.enable = true;
 	};
-
 	environment.systemPackages = with pkgs; [
+		pkgs.gamescope
+		wine
+		lutris
+		pulseaudio
+		pkgs.brightnessctl
+		pkgs.hyprshot
+		pkgs.nix-search-cli
 		pkgs.kitty
 		pkgs.rustup
 		pkgs.blender
