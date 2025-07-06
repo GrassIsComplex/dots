@@ -1,14 +1,23 @@
 { config, lib, pkgs, ... }:
 
 {
+	# Gaming option
 	hardware.graphics.enable32Bit = true;
+	hardware.xone.enable = true;
+	# End of gaming options
+
 	nixpkgs.config.allowUnfree = true;
 
 	programs.steam = {
 		enable = true;
+		gamescopeSession.enable = true;
 		remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
 		dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
 		localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+	};
+	programs.gamescope = {
+		enable = true;
+		capSysNice = true;
 	};
 	programs.firefox = {
 		enable = true;
@@ -19,9 +28,8 @@
 		xwayland.enable = true;
 	};
 	environment.systemPackages = with pkgs; [
-		pkgs.gamescope
+		pkgs.mangohud
 		wine
-		lutris
 		pulseaudio
 		pkgs.brightnessctl
 		pkgs.hyprshot
