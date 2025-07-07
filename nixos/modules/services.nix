@@ -1,6 +1,9 @@
 { config, lib, pkgs, ... }:
 
 {
+	hardware.bluetooth.enable = true; # enables support for Bluetooth
+	hardware.bluetooth.powerOnBoot = true;
+	
 	# Enable polkit
 	security.polkit.enable = true;
 
@@ -21,7 +24,10 @@
 		tumbler.enable = true;
 
 		# Set sddm as the display manager
-		displayManager.sddm.enable = true;
+		displayManager.ly.enable = true;
+
+		# Bluetooth
+		blueman.enable = true;
 
 		# Configure keymap in X11
 		xserver.xkb.layout = "us";

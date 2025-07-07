@@ -28,6 +28,7 @@
 		xwayland.enable = true;
 	};
 	environment.systemPackages = with pkgs; [
+		pkgs.blueman
 		pkgs.protontricks
 		pkgs.mangohud
 		wine
