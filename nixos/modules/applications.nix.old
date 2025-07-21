@@ -28,6 +28,7 @@
 		xwayland.enable = true;
 	};
 	environment.systemPackages = with pkgs; [
+		mpv
 		pkgs.hyprcursor
 		pkgs.aseprite
 		pkgs.godot
