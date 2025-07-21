@@ -23,6 +23,9 @@ rm -rf $CONF_DIR/waybar
 ln -s "$(pwd)/waybar" $CONF_DIR/waybar
 echo "Created waybar link"
 
+ln -s "$(pwd)/bibata-original-classic-cursor" $CONF_DIR/bibata-original-classic-cursor
+echo "Created cursor theme link"
+
 echo
 echo "All symbolic links created"
 

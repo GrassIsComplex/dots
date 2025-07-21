@@ -4,7 +4,7 @@ CONFIG_DIR="$HOME/dots/nixos/modules"
 
 cp -f $CONFIG_DIR/applications.nix $CONFIG_DIR/applications.nix.old
 
-nvim $CONFIG_DIR/applications.nix "+execute \"startinsert|call cursor(21, 43)\""
+nvim $CONFIG_DIR/applications.nix "+/environment.systemPackages = with pkgs"
 
 diff $CONFIG_DIR/applications.nix $CONFIG_DIR/applications.nix.old
 

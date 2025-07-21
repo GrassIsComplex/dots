@@ -28,6 +28,16 @@
 		xwayland.enable = true;
 	};
 	environment.systemPackages = with pkgs; [
+		mpv
+		pkgs.hyprcursor
+		pkgs.aseprite
+		pkgs.godot
+		pkgs.unrar
+		pkgs.gimp
+		pkgs.raylib
+		pkgs.zig
+		gnumake
+		cmake
 		pkgs.blueman
 		pkgs.protontricks
 		pkgs.mangohud
