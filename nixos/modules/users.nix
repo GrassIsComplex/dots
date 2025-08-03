@@ -5,7 +5,10 @@
 	users.users = {
 		grass = {
 			isNormalUser = true;
-			extraGroups = [ "wheel" ];
+			extraGroups = [ 
+				"wheel"
+				"libvirtd" 
+			];
 			packages = with pkgs; [  ];
 		};
 	};

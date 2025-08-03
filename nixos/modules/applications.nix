@@ -15,6 +15,10 @@
 		dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
 		localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 	};
+
+	programs.gamemode = {
+		enable = true;
+	};
 	programs.gamescope = {
 		enable = true;
 		capSysNice = true;
@@ -27,7 +31,18 @@
 		enable = true;
 		xwayland.enable = true;
 	};
+	programs.virt-manager.enable = true;
+	virtualisation.libvirtd.enable = true;
+	virtualisation.spiceUSBRedirection.enable = true;
+
 	environment.systemPackages = with pkgs; [
+		pkgs.hyprpicker
+		zip
+		unzip
+		pkgs.audacity
+		obsidian
+		lutris
+		gamescope
 		pkgs.fuzzel
 		mpv
 		pkgs.hyprcursor
@@ -40,8 +55,10 @@
 		gnumake
 		cmake
 		pkgs.blueman
-		pkgs.protontricks
 		pkgs.mangohud
+		pkgs.protontricks
+		pkgs.wineWowPackages.stagingFull
+		pkgs.winetricks
 		wine
 		pulseaudio
 		pkgs.brightnessctl
