@@ -36,6 +36,7 @@
 	virtualisation.spiceUSBRedirection.enable = true;
 
 	environment.systemPackages = with pkgs; [
+		pkgs.hyprpicker
 		zip
 		unzip
 		pkgs.audacity

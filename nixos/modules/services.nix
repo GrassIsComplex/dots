@@ -44,5 +44,11 @@
 
 		# Enable touchpad support
 		libinput.enable = true;
+
+		ollama = {
+			enable = true;
+			acceleration = "rocm";
+			loadModels = [ "deepseek-r1:8b" ];
+		};
 	};
 }
